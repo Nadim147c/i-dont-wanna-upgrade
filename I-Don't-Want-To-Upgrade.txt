@@ -1,0 +1,14 @@
+! Title: I don't wanna upgrade
+! Expires: 2 hour
+! Description: A filter list to remove upgrade to premium options
+! Homepage: https://github.com/Nadim147c/i-dont-wanna-upgrade
+
+proton.me##span:has-text(/^Upgrade$/):upward(1)
+proton.me##.bg-promotion-text:upward(1)
+
+x.com##a[href="/i/premium_sign_up"]
+
+last.fm##a[href="/pro"]
+last.fm##.subscribe-cta
+
+music.youtube.com##ytmusic-guide-entry-renderer:has-text(Upgrade)

@@ -7,6 +7,7 @@ proton.me##li:has-text(/^Summer Sale$/)
 proton.me##li:has-text(/^Upgrade$/)
 proton.me##span:has-text(/^Upgrade$/):upward(1)
 proton.me##.bg-promotion-text:upward(1)
+proton.me##a[href*="/upgrade"]:has-text("Upgrade")
 
 x.com##a[href="/i/premium_sign_up"]
 
@@ -17,3 +18,5 @@ music.youtube.com##ytmusic-guide-entry-renderer:has-text(Upgrade)
 www.youtube.com###dismissible:has-text(/Try .+ for .+/):upward(3)
 
 www.pixiv.net##a[href^="/premium"]
+
+www.chess.com##a[href*="/membership"]

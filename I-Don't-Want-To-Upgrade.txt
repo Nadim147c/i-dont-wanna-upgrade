@@ -3,20 +3,21 @@
 ! Description: A filter list to remove upgrade to premium options
 ! Homepage: https://github.com/Nadim147c/i-dont-wanna-upgrade
 
-proton.me##li:has-text(/^Summer Sale$/)
-proton.me##li:has-text(/^Upgrade$/)
-proton.me##span:has-text(/^Upgrade$/):upward(1)
-proton.me##.bg-promotion-text:upward(1)
-proton.me##a[href*="/upgrade"]:has-text("Upgrade")
+! Proton Mail
+mail.proton.me##button[class*="button-promotion"]
 
+! Xitter
 x.com##a[href="/i/premium_sign_up"]
 
+! Last fm
 last.fm##a[href="/pro"]
 last.fm##.subscribe-cta
 
+! Youtube Music
 music.youtube.com##ytmusic-guide-entry-renderer:has-text(Upgrade)
-www.youtube.com###dismissible:has-text(/Try .+ for .+/):upward(3)
 
+! Pixiv
 www.pixiv.net##a[href^="/premium"]
 
+! Chess
 www.chess.com##a[href*="/membership"]
